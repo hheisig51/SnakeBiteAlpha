@@ -1,13 +1,13 @@
 # Henry Heisig (hheisig51)
 # 2022-03-09
 # Dog Class
-# Copied from Karl Helmstetter (helmstk1)
+# Borrowed from Karl Helmstetter (helmstk1), modified by Henry Heisig (hheisig51)
 
 
 class Dog:
     """Dog will define dogs by their breed, age, and types of tricks known."""
 
-    kind = "canine"  # class variable shared by all instances
+    kind = "Canis familiaris"  # class variable shared by all instances
 
     # An __init__ method is for stuff that you need to run at instantiation
     # This is similar to Arduino's void setup().
@@ -21,4 +21,4 @@ class Dog:
         self.tricks.append(trick)
 
     def bark(self):
-        return "arf!"
+        return "Arf!"
