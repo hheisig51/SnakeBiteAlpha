@@ -6,10 +6,15 @@
 import board
 from rgb import LED
 
-R = board.D5
-G = board.D6
-B = board.D7
+RedPin = board.D5
+GreenPin = board.D6
+BluePin = board.D7
 
-RGB_1 = LED(R, G, B)
+R = LED(RedPin)
+G = LED(GreenPin)
+B = LED(BluePin)
 
-RGB_1.test()
+while True:
+    R.fade()
+    G.on(15000)
+    B.off()
