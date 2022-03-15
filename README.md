@@ -57,14 +57,17 @@ Goal: PLACEHOLDER
 
 ### Classes Code
 
-| Filename                  | Purpose     | Dependencies        |
-| ------------------------- | ----------- | ------------------- |
-| [`dog.py`](/dog.py)       | PLACEHOLDER | n/a                 |
-| [`kennel.py`](/kennel.py) | PLACEHOLDER | [`dog.py`](/dog.py) |
+| Filename                                      | Purpose                                                                               | Dependencies        |
+| --------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------- |
+| [`dog.py`](/dog.py)                           | PLACEHOLDER                                                                           | n/a                 |
+| [`kennel.py`](/kennel.py)                     | PLACEHOLDER                                                                           | [`dog.py`](/dog.py) |
+| [`olddog-newtricks.py`](/olddog-newtricks.py) | Original example code from Karl Helmstetter [(helmstk1)](https://github.com/helmstk1) | [`dog.py`](/dog.py) |
 
 ### Classes Reflection
 
-f-strings. PLACEHOLDER
+Classes are odd. They still don't entirely make sense _(Note from future Henry: this bites you in the butt. Learn classes!)_. They are important, my partner wrote one for the project we just did. They just aren't clicking with me.
+
+But, something I learned: f-strings. The
 
 ## RGB LED
 

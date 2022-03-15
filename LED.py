@@ -1,7 +1,7 @@
 # Henry Heisig (hheisig51)
 # 2022-03-11
 # LED Function
-#
+# Assistance from Karl Helmstetter (helmstk1)
 
 import board
 from rgb import LED
@@ -17,4 +17,4 @@ B = LED(BluePin)
 while True:
     R.fade()
     G.on(15000)
-    B.off()
+    B.fade()
