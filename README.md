@@ -65,9 +65,19 @@ Goal: PLACEHOLDER
 
 ### Classes Reflection
 
-Classes are odd. They still don't entirely make sense _(Note from future Henry: this bites you in the butt. Learn classes!)_. They are important, my partner wrote one for the project we just did. They just aren't clicking with me.
+Classes are odd. They still don't entirely make sense *(Note from future Henry: this bites you in the butt. Learn classes!)*. They are important, my partner wrote one for the project we just did. They just aren't clicking with me. Thankfully, that's why classmates and teachers exist.
 
-But, something I learned: f-strings. The
+But, something I learned: f-strings. The [`olddog-newtricks.py`](/olddog-newtricks.py) file has the original tutorial code. When you run it, there's an ugly little problem on `ln 22` when it prints a list of Rex's attributes:
+
+Code: `print(Rex.kind, ", ", Rex.breed, ", ", Rex.age, ", ", Rex.tricks)`
+
+Output: `Canis familiaris ,  Golden ,  8 ,  ['roll over']`
+
+There's a space before every comma, with actual separating spaces having to be input. But, modify this print statement with f-strings, and we get a better result:
+
+Code: `print(f"{Rex.kind}, {Rex.breed}, {Rex.age}, {Rex.tricks}")`
+
+Output: `Canis familiaris, Golden, 8, ['roll over']`
 
 ## RGB LED
 
