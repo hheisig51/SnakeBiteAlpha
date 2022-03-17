@@ -35,7 +35,7 @@ It imports the `hello` module from the above file `hello.py`. When a module is i
 
 ### Modules Code
 
-| Filename                    | Purpose                                  | Dependencies            |
+| Filename                    | Description                              | Dependencies            |
 | --------------------------- | ---------------------------------------- | ----------------------- |
 | [`hello.py`](/hello.py)     | Contains `world` module for `genesis.py` | n/a                     |
 | [`genesis.py`](/genesis.py) | Prints `Hello, World!` using `hello.py`  | [`hello.py`](/hello.py) |
@@ -53,14 +53,18 @@ I didn't understand this before, especially in the context of importing librarie
 
 ### Classes Assignment
 
-Goal: PLACEHOLDER
+Goal: Create and modify objects from a class.
+
+(In this case, just copying code from the example. But, still reviewing it to understand how it works.)
+
+The explanation for the code is in the files. Look below for the files.
 
 ### Classes Code
 
-| Filename                                      | Purpose                                                                               | Dependencies        |
+| Filename                                      | Description                                                                           | Dependencies        |
 | --------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------- |
-| [`dog.py`](/dog.py)                           | PLACEHOLDER                                                                           | n/a                 |
-| [`kennel.py`](/kennel.py)                     | PLACEHOLDER                                                                           | [`dog.py`](/dog.py) |
+| [`dog.py`](/dog.py)                           | Class with different functions                                                        | n/a                 |
+| [`kennel.py`](/kennel.py)                     | Modified example code for formatting                                                  | [`dog.py`](/dog.py) |
 | [`olddog-newtricks.py`](/olddog-newtricks.py) | Original example code from Karl Helmstetter [(helmstk1)](https://github.com/helmstk1) | [`dog.py`](/dog.py) |
 
 ### Classes Reflection
@@ -71,13 +75,17 @@ But, something I learned: f-strings. The [`olddog-newtricks.py`](/olddog-newtric
 
 Code: `print(Rex.kind, ", ", Rex.breed, ", ", Rex.age, ", ", Rex.tricks)`
 
-Output: `Canis familiaris ,  Golden ,  8 ,  ['roll over']`
+Output: `Canis familiaris , Golden , 8 , ['roll over']`
 
 There's a space before every comma, with actual separating spaces having to be input. But, modify this print statement with f-strings, and we get a better result:
 
 Code: `print(f"{Rex.kind}, {Rex.breed}, {Rex.age}, {Rex.tricks}")`
 
 Output: `Canis familiaris, Golden, 8, ['roll over']`
+
+Here's an article on f-strings I used:
+
+[freeCodeCamp](https://www.freecodecamp.org/news/python-f-strings-tutorial-how-to-use-f-strings-for-string-formatting/) ([Offline .pdf copy](/Resources/f-Strings.pdf))
 
 ## RGB LED
 
@@ -87,9 +95,9 @@ Goal: PLACEHOLDER
 
 ### RGB Code
 
-| Filename | Purpose | Dependencies |
-| -------- | ------- | ------------ |
-|          |         |              |
+| Filename | Description | Dependencies |
+| -------- | ----------- | ------------ |
+|          |             |              |
 
 ### RGB Reflection
 
