@@ -103,6 +103,8 @@ Goal: PLACEHOLDER
 
 PLACEHOLDER
 
+https://user-images.githubusercontent.com/71345201/159958182-54633d3e-e537-4dd9-9f54-7f5d59205611.mov
+
 ## About Me
 
 Hi! I'm Henry Heisig, an Engineering III student in the Charlottesville High School class of 2024. You can contact me at [hheisig51+github@charlottesvilleschools.org](mailto:hheisig51+github@charlottesvilleschools.org) or [henry+github@eheisig.com](mailto:henry+github@eheisig.com) with any comments, questions, or concerns.
