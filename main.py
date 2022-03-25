@@ -6,7 +6,7 @@
 """ This file is the class-based version of making a single LED fade"""
 import time
 import board
-from rgb_2 import RGB
+from rgb import RGB
 
 r1 = board.D8
 b1 = board.D9
@@ -21,8 +21,11 @@ half = int(65535 / 2)  # Half Brightness
 myRGBled1 = RGB(r1, g1, b1)  # create a new RGB object, using pins 8, 9, & 10
 myRGBled2 = RGB(r2, g2, b2)  # create a new RGB object, using pins 4, 5, & 7
 
-
 while True:
+    myRGBled1.Blinky(1)
+    myRGBled2.off()
+
+'''while True:
     """Shines two RGB LEDs in opposing colours, then rainbows!"""
     myRGBled1.blue(half)
     myRGBled2.yellow(half)
@@ -55,3 +58,4 @@ while True:
 # myRGB1.rainbow(rate1) # Fade through the colors of the rainbow at the given rate.  Oooooh, pretty!
 # myRGB2.rainbow(rate2) # Fade through the colors of the rainbow at the given rate.  Oooooh, pretty!
 # time.sleep(5)
+'''
