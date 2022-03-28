@@ -94,26 +94,23 @@ class RGB:
         self.myRedLED.off()
         self.myGreenLED.on()
         self.myBlueLED.off()
-        
+
     def magenta(self, brightness=65535):
         self.myRedLED.on()
         self.myGreenLED.off()
         self.myBlueLED.on()
-        
-    def Blinky(self, t):
-        ib = 0
-        for ib in range(0, 0):
-            self.led.duty_cycle = 65535
-            print(ib)
+
+    def Blinky(self, t, l):
+        for l in range(l, 0, -1):
+            print(f"Rate: {t} seconds\n Cycles left: {l}")
+            self.myRedLED.on()
+            self.myGreenLED.on()
+            self.myBlueLED.on()
             time.sleep(t)
-            ib = 1
-        for ib in range(1, 1):
-            self.led.duty_cycle = 0
-            print(ib)
+            self.myRedLED.off()
+            self.myGreenLED.off()
+            self.myBlueLED.off()
             time.sleep(t)
-            ib = 0
-            
-            
 
     def off(self):
         # This turns off all 3 LEDs, but my LEDs were still glowing a tiny bit.
@@ -123,3 +120,22 @@ class RGB:
         self.myGreenLED.off()
         self.myRedLED.off()
         lightBulb.value = 0
+
+'''
+    def Blinky(self, t, l):
+        if l >= 1:
+            print(f"Rate: {t} seconds\n Cycles left: {l}")
+            self.myRedLED.on()
+            self.myGreenLED.on()
+            self.myBlueLED.on()
+            time.sleep(t)
+            self.myRedLED.off()
+            self.myGreenLED.off()
+            self.myBlueLED.off()
+            time.sleep(t)
+            l -= 1
+        else:
+            exit
+'''
+
+

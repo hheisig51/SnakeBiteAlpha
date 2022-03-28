@@ -22,7 +22,7 @@ myRGBled1 = RGB(r1, g1, b1)  # create a new RGB object, using pins 8, 9, & 10
 myRGBled2 = RGB(r2, g2, b2)  # create a new RGB object, using pins 4, 5, & 7
 
 while True:
-    myRGBled1.Blinky(1)
+    myRGBled1.Blinky(1, 5)
     myRGBled2.off()
 
 '''while True:
