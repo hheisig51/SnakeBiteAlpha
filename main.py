@@ -1,9 +1,10 @@
 # Henry Heisig (hheisig51)
 # 2022-03-24
 # RGB LED code
-# Copied from Karl Helmstetter (helmstk1)
+# Borrowed from Karl Helmstetter (helmstk1), modified by Henry Heisig (hheisig51)
 
-""" This file is the class-based version of making a single LED fade"""
+"""This document uses the rgb.py class to make flashing two RGB LEDs simple."""
+
 import time
 import board
 from rgb import RGB
@@ -12,21 +13,20 @@ r1 = board.D8
 b1 = board.D9
 g1 = board.D10
 r2 = board.D4
-b2 = board.D5
-g2 = board.D7  # D6 uses the same timer as D8,9,10.  Avoid!
+b2 = board.D7
+g2 = board.D5
 
-full = 65535  # Max Brightness
-half = int(65535 / 2)  # Half Brightness
+full = 65535
+half = int(65535 / 2)
 
-myRGBled1 = RGB(r1, g1, b1)  # create a new RGB object, using pins 8, 9, & 10
-myRGBled2 = RGB(r2, g2, b2)  # create a new RGB object, using pins 4, 5, & 7
+myRGBled1 = RGB(r1, g1, b1)
+myRGBled2 = RGB(r2, g2, b2)
+
+myRGBled1.off()
+myRGBled2.off()
 
 while True:
-    myRGBled1.Blinky(1, 5)
-    myRGBled2.off()
-
-'''while True:
-    """Shines two RGB LEDs in opposing colours, then rainbows!"""
+    """Flashes the two LEDs various colors, then has them blink on and off"""
     myRGBled1.blue(half)
     myRGBled2.yellow(half)
     time.sleep(1)
@@ -48,14 +48,5 @@ while True:
     myRGBled2.off()
     time.sleep(2)
 
-    myRGBled1.Blinky(
-        2
-    )  # Obviously you should replace "rate1" with a real number...
-    myRGBled2.Blinky(4)  # Sames
-    time.sleep(3)
-
-# extra spicy (optional):
-# myRGB1.rainbow(rate1) # Fade through the colors of the rainbow at the given rate.  Oooooh, pretty!
-# myRGB2.rainbow(rate2) # Fade through the colors of the rainbow at the given rate.  Oooooh, pretty!
-# time.sleep(5)
-'''
+    myRGBled1.Blinky(2, 5)
+    myRGBled2.Blinky(4, 5)
