@@ -78,26 +78,27 @@ class RGB:
         self.myBlueLED.off()
 
     def magenta(self, brightness=65535):
-        self.myRedLED.on()
-        self.myGreenLED.off()
-        self.myBlueLED.on()
+        self.red
+        self.green(0)
+        self.blue
+        
+    def white(self, brightness=65535):
+        self.red()
+        self.green()
+        self.blue()
 
-    def Blinky(self, t, l):
-        for l in range(l, 0):
-            print(f"Rate: {t} seconds\n Cycles left: {l}")
-            self.myRedLED.on()
-            self.myGreenLED.on()
-            self.myBlueLED.on()
+
+    def blinky(self, t, c):
+        for c in range(c, 0, -1):
+            print(f"Rate: {t} seconds\nCycles left: {c}")
+            self.white()
             time.sleep(t)
-            self.myRedLED.off()
-            self.myGreenLED.off()
-            self.myBlueLED.off()
+            self.off()
             time.sleep(t)
-            if l == 0:
+            if c == 0:
                 break
 
     def off(self):
         self.myBlueLED.off()
         self.myGreenLED.off()
         self.myRedLED.off()
-        lightBulb.value = 0
