@@ -103,7 +103,7 @@ Goal: PLACEHOLDER
 
 PLACEHOLDER
 
-https://user-images.githubusercontent.com/71345201/159958355-948ba2f8-00f0-4afa-9a49-7066c0cdc6ad.mp4
+<video src="https://user-images.githubusercontent.com/71345201/159958355-948ba2f8-00f0-4afa-9a49-7066c0cdc6ad.mp4" data-canonical-src="https://user-images.githubusercontent.com/71345201/159958355-948ba2f8-00f0-4afa-9a49-7066c0cdc6ad.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px;"></video>
 
 ## About Me
 
